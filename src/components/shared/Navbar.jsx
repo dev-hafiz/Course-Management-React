@@ -2,7 +2,7 @@
 import logo from "../../../public/logo.png";
 const Navbar = () => {
   return (
-    <div className="px-3 md:px-28 mx-auto navbar bg-[#1C1E53] text-white">
+    <div className="px-3 pt-4 md:px-28 mx-auto navbar bg-gradient-to-l from-[#1C1E53] to-[#151640] text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <img src={logo} className="w-[60px] h-full" alt="logo" />
+          <img src={logo} className="w-[55px] h-full" alt="logo" />
           Learner's
         </a>
       </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className=" btn btn-outline text-white border-[#F47D9E] border-2 hover:border-white">
+        <button className=" btn btn-outline  px-10 text-white border-[#F47D9E] border-2 hover:border-white">
           Login
         </button>
       </div>
