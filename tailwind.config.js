@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["PT Serif", "serif"],
+        serif: ["PT Serif", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
 
       keyframes: {

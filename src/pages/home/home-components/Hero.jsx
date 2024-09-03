@@ -36,7 +36,7 @@ const Hero = () => {
             learners, and achieve your goals. Our platform offers flexible
             learning options to fit your busy life.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 w-[160px]">
             <Button children={"Get Started"} />
           </div>
         </div>

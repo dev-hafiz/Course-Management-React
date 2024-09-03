@@ -1,0 +1,422 @@
+[
+    {
+        "id": 324546546345,
+        "name": "React Native",
+        "instructor": "John Doe",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "This comprehensive React Native course is designed to equip you with the skills needed to build mobile applications using JavaScript and React. Over the course of 8 weeks, you'll learn how to set up your development environment, create your first app, and dive into more advanced topics.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "8 weeks",
+        "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to React Native",
+                "content": "Overview of React Native, setting up your development environment."
+            },
+            {
+                "week": 2,
+                "topic": "Building Your First App",
+                "content": "Creating a simple mobile app using React Native components."
+            }
+        ],
+        "students": [
+            {
+                "id": 201,
+                "name": "Alice Johnson",
+                "email": "alice@example.com"
+            },
+            {
+                "id": 202,
+                "name": "Bob Smith",
+                "email": "bob@example.com"
+            },
+            {
+                "id": 203,
+                "name": "Charlie Davis",
+                "email": "charlie@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546346,
+        "name": "Advanced Node.js",
+        "instructor": "Jane Smith",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "Dive deep into Node.js and learn advanced concepts like microservices, authentication, and real-time communication. This 10-week course is perfect for those looking to enhance their backend development skills.",
+        "enrollmentStatus": "In Progress",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png",
+        "duration": "10 weeks",
+        "schedule": "Mondays and Wednesdays, 5:00 PM - 7:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic understanding of JavaScript", "Familiarity with Express.js"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Node.js",
+                "content": "Understanding the event loop and Node.js architecture."
+            },
+            {
+                "week": 2,
+                "topic": "Building RESTful APIs",
+                "content": "Creating RESTful APIs with Express.js."
+            }
+        ],
+        "students": [
+            {
+                "id": 204,
+                "name": "Diana Wilson",
+                "email": "diana@example.com"
+            },
+            {
+                "id": 205,
+                "name": "Ethan Brown",
+                "email": "ethan@example.com"
+            },
+            {
+                "id": 206,
+                "name": "Fiona Lee",
+                "email": "fiona@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546347,
+        "name": "Data Science with Python",
+        "instructor": "Michael Brown",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "Learn data analysis, visualization, and machine learning using Python. This course spans 12 weeks and covers the essential tools for a data scientist.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "12 weeks",
+        "schedule": "Thursdays, 7:00 PM - 9:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic Python knowledge", "Understanding of statistics"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Data Science",
+                "content": "Understanding data science and its applications."
+            },
+            {
+                "week": 2,
+                "topic": "Python for Data Analysis",
+                "content": "Using Pandas and NumPy for data manipulation."
+            }
+        ],
+        "students": [
+            {
+                "id": 207,
+                "name": "George Kim",
+                "email": "george@example.com"
+            },
+            {
+                "id": 208,
+                "name": "Hannah Patel",
+                "email": "hannah@example.com"
+            },
+            {
+                "id": 209,
+                "name": "Ian Martinez",
+                "email": "ian@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546348,
+        "name": "UI/UX Design Fundamentals",
+        "instructor": "Emily Davis",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "A beginner's course in UI/UX design that covers the principles of user-centered design, prototyping, and usability testing. Over 6 weeks, you will create your own design projects.",
+        "enrollmentStatus": "Closed",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png",
+        "duration": "6 weeks",
+        "schedule": "Saturdays, 10:00 AM - 1:00 PM",
+        "location": "Online",
+        "prerequisites": ["None"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to UI/UX",
+                "content": "Understanding the difference between UI and UX."
+            },
+            {
+                "week": 2,
+                "topic": "User Research Techniques",
+                "content": "Methods for gathering user insights."
+            }
+        ],
+        "students": [
+            {
+                "id": 210,
+                "name": "Jack Turner",
+                "email": "jack@example.com"
+            },
+            {
+                "id": 211,
+                "name": "Katherine Hall",
+                "email": "katherine@example.com"
+            },
+            {
+                "id": 212,
+                "name": "Liam Scott",
+                "email": "liam@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546349,
+        "name": "Introduction to Cybersecurity",
+        "instructor": "David Wilson",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "Explore the fundamentals of cybersecurity, including risk assessment, network security, and incident response. This 8-week course is designed for beginners.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "8 weeks",
+        "schedule": "Fridays, 4:00 PM - 6:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic IT knowledge"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Cybersecurity",
+                "content": "Overview of cybersecurity and its importance."
+            },
+            {
+                "week": 2,
+                "topic": "Understanding Threats and Vulnerabilities",
+                "content": "Identifying common threats to information security."
+            }
+        ],
+        "students": [
+            {
+                "id": 213,
+                "name": "Mia Garcia",
+                "email": "mia@example.com"
+            },
+            {
+                "id": 214,
+                "name": "Noah Johnson",
+                "email": "noah@example.com"
+            },
+            {
+                "id": 215,
+                "name": "Olivia Lee",
+                "email": "olivia@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546350,
+        "name": "Machine Learning Basics",
+        "instructor": "Sarah Williams",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "An introductory course to machine learning concepts, covering supervised and unsupervised learning, algorithms, and practical applications.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "8 weeks",
+        "schedule": "Sundays, 3:00 PM - 5:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic knowledge of Python"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Machine Learning",
+                "content": "Overview of machine learning and its types."
+            },
+            {
+                "week": 2,
+                "topic": "Data Preprocessing",
+                "content": "Techniques for cleaning and preparing data."
+            }
+        ],
+        "students": [
+            {
+                "id": 216,
+                "name": "Paul Adams",
+                "email": "paul@example.com"
+            },
+            {
+                "id": 217,
+                "name": "Quinn Cooper",
+                "email": "quinn@example.com"
+            },
+            {
+                "id": 218,
+                "name": "Rita Evans",
+                "email": "rita@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546351,
+        "name": "Full Stack Web Development",
+        "instructor": "Brian Martinez",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "Learn to build full stack applications using the MERN stack (MongoDB, Express, React, Node.js). This 12-week course covers both front-end and back-end development.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "12 weeks",
+        "schedule": "Tuesdays and Thursdays, 6:00 PM - 9:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic understanding of HTML, CSS, and JavaScript"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to MERN Stack",
+                "content": "Overview of the MERN stack and setting up your environment."
+            },
+            {
+                "week": 2,
+                "topic": "Building the Frontend with React",
+                "content": "Creating user interfaces using React components."
+            }
+        ],
+        "students": [
+            {
+                "id": 219,
+                "name": "Steve Nelson",
+                "email": "steve@example.com"
+            },
+            {
+                "id": 220,
+                "name": "Tina Rogers",
+                "email": "tina@example.com"
+            },
+            {
+                "id": 221,
+                "name": "Ulysses Perry",
+                "email": "ulysses@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546352,
+        "name": "Digital Marketing Strategy",
+        "instructor": "Samantha Carter",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "This course focuses on digital marketing strategies, including SEO, content marketing, social media, and analytics. It spans 10 weeks with practical case studies.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "10 weeks",
+        "schedule": "Wednesdays, 1:00 PM - 3:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic marketing knowledge"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Digital Marketing",
+                "content": "Understanding the digital marketing landscape."
+            },
+            {
+                "week": 2,
+                "topic": "SEO Fundamentals",
+                "content": "Basics of search engine optimization."
+            }
+        ],
+        "students": [
+            {
+                "id": 222,
+                "name": "Victor Moore",
+                "email": "victor@example.com"
+            },
+            {
+                "id": 223,
+                "name": "Wendy Carter",
+                "email": "wendy@example.com"
+            },
+            {
+                "id": 224,
+                "name": "Xander Brooks",
+                "email": "xander@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546353,
+        "name": "Introduction to Cloud Computing",
+        "instructor": "Oliver Harris",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "An introductory course on cloud computing concepts, services, and deployment models. This 8-week course will cover AWS, Azure, and Google Cloud.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png", 
+        "duration": "8 weeks",
+        "schedule": "Fridays, 2:00 PM - 4:00 PM",
+        "location": "Online",
+        "prerequisites": ["Basic IT knowledge"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Cloud Computing",
+                "content": "Overview of cloud computing and its benefits."
+            },
+            {
+                "week": 2,
+                "topic": "Understanding Cloud Services",
+                "content": "Different types of cloud services: IaaS, PaaS, SaaS."
+            }
+        ],
+        "students": [
+            {
+                "id": 225,
+                "name": "Yara Foster",
+                "email": "yara@example.com"
+            },
+            {
+                "id": 226,
+                "name": "Zane Morris",
+                "email": "zane@example.com"
+            },
+            {
+                "id": 227,
+                "name": "Ava Lopez",
+                "email": "ava@example.com"
+            }
+        ]
+    },
+    {
+        "id": 324546546354,
+        "name": "Introduction to Blockchain Technology",
+        "instructor": "Liam King",
+        "instructorImg":"https://i.ibb.co/XV8Q983/user.png",
+        "description": "Explore the world of blockchain technology and its applications beyond cryptocurrency. This course is designed for beginners and spans 6 weeks.",
+        "enrollmentStatus": "Open",
+        "thumbnail":"https://i.ibb.co/7wvdkkn/course1.png",
+        "duration": "6 weeks",
+        "schedule": "Saturdays, 9:00 AM - 11:00 AM",
+        "location": "Online",
+        "prerequisites": ["None"],
+        "syllabus": [
+            {
+                "week": 1,
+                "topic": "Introduction to Blockchain",
+                "content": "Understanding blockchain fundamentals."
+            },
+            {
+                "week": 2,
+                "topic": "Smart Contracts",
+                "content": "What are smart contracts and how do they work?"
+            }
+        ],
+        "students": [
+            {
+                "id": 228,
+                "name": "Nora Bell",
+                "email": "nora@example.com"
+            },
+            {
+                "id": 229,
+                "name": "Oliver Adams",
+                "email": "oliver@example.com"
+            },
+            {
+                "id": 230,
+                "name": "Penny White",
+                "email": "penny@example.com"
+            }
+        ]
+    }
+]

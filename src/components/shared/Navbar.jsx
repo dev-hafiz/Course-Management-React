@@ -37,9 +37,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
-          <img src={logo} className="w-[55px] h-full" alt="logo" />
-          Learner's
+        <a className="btn btn-ghost ">
+          <img src={logo} className="w-[55px] h-full " alt="logo" />
+          <span className="text-2xl  font-serif font-medium -ml-2">
+            Learner<span className="text-[#FD5386]">'</span>s
+          </span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">

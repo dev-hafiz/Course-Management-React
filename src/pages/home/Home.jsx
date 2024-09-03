@@ -1,4 +1,5 @@
 import Navbar from "../../components/shared/Navbar";
+import Courses from "../courses/Courses";
 import Hero from "./home-components/Hero";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+      <Courses />
     </div>
   );
 };
