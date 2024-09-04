@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Searchbar = ({ searchQuery, handleSearch }) => {
   return (
-    <div className="my-20 w-full">
+    <div className="my-14 px-5 w-3/5">
       <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"
@@ -14,7 +14,7 @@ const Searchbar = ({ searchQuery, handleSearch }) => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="h-4 w-4 opacity-70"
+          className="h-6 w-6 opacity-70"
         >
           <path
             fillRule="evenodd"
