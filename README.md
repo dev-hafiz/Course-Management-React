@@ -1,8 +1,76 @@
-# React + Vite
+# Course Management Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web application developed using React.js with Redux Toolkit for state management. It features a custom backend built with Node.js and Express.js, with MongoDB as the database. The application allows users to browse courses, view detailed information, and manage enrolled courses.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Course Listing Page
+- **Course Fetching**: Fetches a list of courses from a custom API.
+- **Search Functionality**: Users can search courses by name and instructor.
+- **Course Navigation**: Click on any course to view detailed information.
+
+### Course Details Page
+- Displays detailed information about the selected course:
+  - Course name
+  - Instructor's name
+  - Description
+  - Enrollment status (Open, Closed, In Progress)
+  - Course duration
+  - Schedule
+  - Location
+  - Pre-requisites
+  - Syllabus (expandable)
+
+### Student Dashboard
+- **Enrolled Courses**: Displays a list of courses the student is enrolled in.
+- **Course Details**: Shows course name, instructor name, and thumbnail.
+
+
+### Advanced State Management
+- The application uses Redux Toolkit to manage the state effectively across the application.
+
+## Project Setup
+
+### Prerequisites
+Make sure you have the following installed on your system:
+- Node.js
+- npm or Yarn
+
+
+### Getting Started
+
+Follow these steps to set up and run the client-side of the project locally:
+
+1. **Clone the Repository**
+   First, clone the repository from GitHub to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/course-management-app.git
+   cd course-management-app/client
+   ```
+2. **Install Client Dependencies**
+Navigate to the client directory and install the required dependencies:
+
+```bash 
+npm install
+
+```
+
+This command installs all the necessary packages for the frontend, including React.js, Redux Toolkit, and other libraries.
+
+3. **Run the Development Server**
+After the dependencies have been installed, you can start the development server:
+
+```bash
+npm run dev
+```
+This will start the Vite development server, and you should see output indicating that the server is running.
+
+4. **Access the Application**
+Open your browser and go to http://localhost:5173. You should see the course management application running.
+
+
+
+- Additional Notes
+ - Ensure you have Node.js and npm installed on your system before running the above commands.
+ - If you encounter any issues, make sure to check the console for errors and verify your      environment setup.

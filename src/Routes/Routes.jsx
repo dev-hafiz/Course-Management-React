@@ -21,7 +21,9 @@ export const router = createBrowserRouter([
         path: "courses/:id",
         element: <CourseDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/courses/${params.id}`),
+          fetch(
+            `https://course-management-node-server.vercel.app/courses/${params.id}`
+          ),
       },
     ],
   },

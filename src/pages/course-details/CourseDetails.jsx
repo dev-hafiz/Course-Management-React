@@ -4,7 +4,6 @@ import shape from "../../../src/assets/Line 48.png";
 
 const CourseDetails = () => {
   const course = useLoaderData();
-  console.log("course --->", course);
   return (
     <div>
       <SectionTab details="details" />
@@ -65,9 +64,13 @@ const CourseDetails = () => {
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white shadow-md rounded-xl">
               <thead>
-                <tr className="bg-blue-gray-100 text-gray-700">
-                  <th className="py-3 px-4 text-left">Details</th>
-                  <th className="py-3 px-4 text-left">Availability</th>
+                <tr>
+                  <th className="py-3 px-4 text-left font-serif text-xl">
+                    Details
+                  </th>
+                  <th className="py-3 px-4 text-left font-serif text-xl">
+                    Availability
+                  </th>
                 </tr>
               </thead>
               <tbody className="text-blue-gray-900">
@@ -119,7 +122,7 @@ const CourseDetails = () => {
               <input type="radio" name="my-accordion-2" defaultChecked />
               <div className="collapse-title text-xl font-medium">
                 <p>
-                  Week :{chapter?.week} {chapter?.content}
+                  Week: {chapter?.week} {chapter?.content}
                 </p>
               </div>
               <div className="collapse-content">
