@@ -1,9 +1,12 @@
-const Searchbar = () => {
+/* eslint-disable react/prop-types */
+const Searchbar = ({ searchQuery, handleSearch }) => {
   return (
     <div className="my-20 w-full">
       <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"
+          value={searchQuery}
+          onChange={handleSearch}
           className="grow "
           placeholder="Search Course by course title or instructor name..."
         />

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/logo.png";
 const Navbar = () => {
   return (
@@ -24,14 +24,28 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-[#F47D9E] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-[#F47D9E]  z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/">HOME</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-[#FD5386]" : "text-white"
+                }
+              >
+                <button>Home</button>
+              </NavLink>
             </li>
 
             <li>
-              <Link to="/courses">All Courses</Link>
+              <NavLink
+                to="/courses"
+                className={({ isActive }) =>
+                  isActive ? "text-[#FD5386]" : "text-white"
+                }
+              >
+                <button>All Courses</button>
+              </NavLink>
             </li>
             <li>
               <a>Student Dashboard</a>
@@ -48,11 +62,25 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">HOME</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#FD5386]" : "text-white"
+              }
+            >
+              <button>Home</button>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/courses">All Courses</Link>
+            <NavLink
+              to="/courses"
+              className={({ isActive }) =>
+                isActive ? "text-[#FD5386]" : "text-white"
+              }
+            >
+              <button> All Courses</button>
+            </NavLink>
           </li>
           <li>
             <a>Student Dashboard</a>
