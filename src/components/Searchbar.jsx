@@ -1,6 +1,6 @@
 const Searchbar = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 w-full">
       <label className="input input-bordered flex items-center gap-2">
         <input
           type="text"

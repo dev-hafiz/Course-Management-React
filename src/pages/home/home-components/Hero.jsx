@@ -37,7 +37,7 @@ const Hero = () => {
             learning options to fit your busy life.
           </p>
           <div className="mt-6 w-[160px]">
-            <Button children={"Get Started"} />
+            <Button children={"All Courses"} />
           </div>
         </div>
 

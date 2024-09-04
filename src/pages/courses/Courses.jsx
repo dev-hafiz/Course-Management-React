@@ -1,7 +1,6 @@
 /* eslint-disable react/no-children-prop */
 /* eslint-disable react/no-unknown-property */
 import Searchbar from "../../components/Searchbar";
-import course1 from "../../assets/course1.png";
 import { useState } from "react";
 import { useEffect } from "react";
 import Button from "../../components/shared/Button";
@@ -11,7 +10,7 @@ const Courses = () => {
   console.log("Courses", courses);
 
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("http://localhost:5000/courses")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");
@@ -26,15 +25,18 @@ const Courses = () => {
       });
   }, []);
   return (
-    <div className="mx-5 md:mx-32 mt-10 mb-44">
+    <div className="mx-5 md:mx-32 mt-10 mb-44 flex flex-col justify-center items-center gap-4">
       <Searchbar />
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {courses?.map((course, index) => (
-          <div key={index} className="col-span-12 md:col-span-6  lg:col-span-3">
+        {courses?.slice(0, 4).map((course, index) => (
+          <div
+            key={index}
+            className="col-span-12 md:col-span-6  lg:col-span-3 mb-5"
+          >
             <img
-              src={course1}
+              src={course?.thumbnail}
               alt="course image"
-              className="w-[386px] h-[236px]  rounded-tl-lg rounded-tr-lg"
+              className="w-[386px] h-[236px] object-cover  rounded-tl-lg rounded-tr-lg"
             />
             <div className="relative p-5">
               <div className="bg-[#FD6387] absolute right-5 -top-4 text-white w-[80px] py-1 flex justify-center  gap-2 items-center rounded-full">
@@ -53,7 +55,7 @@ const Courses = () => {
                   />
                 </svg>
 
-                <span className="font-semibold">5</span>
+                <span className="font-semibold">{course?.rating}</span>
               </div>
               <h2 className="font-roboto font-bold text-xl">{course?.name}</h2>
               <p className="font-roboto font-normal text-sm my-2 text-[#282938]">
@@ -134,6 +136,9 @@ const Courses = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-[200px] my-8 ">
+        <Button children={"Course Listing Page"} />
       </div>
     </div>
   );
