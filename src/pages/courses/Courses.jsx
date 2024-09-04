@@ -4,10 +4,11 @@ import Searchbar from "../../components/Searchbar";
 import { useState } from "react";
 import { useEffect } from "react";
 import Button from "../../components/shared/Button";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
-  console.log("Courses", courses);
+  // console.log("Courses", courses);
 
   useEffect(() => {
     fetch("http://localhost:5000/courses")
@@ -28,7 +29,7 @@ const Courses = () => {
     <div className="mx-5 md:mx-32 mt-10 mb-44 flex flex-col justify-center items-center gap-4">
       <Searchbar />
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-        {courses?.slice(0, 4).map((course, index) => (
+        {courses?.map((course, index) => (
           <div
             key={index}
             className="col-span-12 md:col-span-6  lg:col-span-3 mb-5"
@@ -132,13 +133,12 @@ const Courses = () => {
                 </div>
               </div>
               {/* Button  */}
-              <Button children={"Details"} />
+              <Link to={`courses/${course?._id}`}>
+                <Button children={"Details"} />
+              </Link>
             </div>
           </div>
         ))}
-      </div>
-      <div className="w-[200px] my-8 ">
-        <Button children={"Course Listing Page"} />
       </div>
     </div>
   );

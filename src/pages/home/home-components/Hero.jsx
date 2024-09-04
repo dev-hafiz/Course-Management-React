@@ -4,6 +4,7 @@ import Button from "../../../components/shared/Button";
 import heroImage from "../../../assets/heroImage1.png";
 import shape1 from "../../../assets/shape1.png";
 import shape2 from "../../../assets/shape2.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -37,7 +38,9 @@ const Hero = () => {
             learning options to fit your busy life.
           </p>
           <div className="mt-6 w-[160px]">
-            <Button children={"All Courses"} />
+            <Link to="/courses">
+              <Button children={"All Courses"} />
+            </Link>
           </div>
         </div>
 

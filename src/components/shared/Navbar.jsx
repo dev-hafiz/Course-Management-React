@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom";
 import logo from "../../../public/logo.png";
 const Navbar = () => {
   return (
@@ -26,32 +27,32 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-[#F47D9E] rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>HOME</a>
+              <Link to="/">HOME</Link>
             </li>
 
             <li>
-              <a>All Course</a>
+              <Link to="/courses">All Courses</Link>
             </li>
             <li>
               <a>Student Dashboard</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost ">
+        <Link to="/" className="btn btn-ghost ">
           <img src={logo} className="w-[55px] h-full " alt="logo" />
           <span className="text-2xl  font-serif font-medium -ml-2">
             Learner<span className="text-[#FD5386]">'</span>s
           </span>
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <Link to="/">HOME</Link>
           </li>
 
           <li>
-            <a>All Course</a>
+            <Link to="/courses">All Courses</Link>
           </li>
           <li>
             <a>Student Dashboard</a>
