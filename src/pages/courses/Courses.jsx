@@ -6,14 +6,32 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Button from "../../components/shared/Button";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCourses } from "../../redux/slices/coursesSlice";
 
 const Courses = () => {
-  const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
-  console.log("searchQuery", searchQuery);
+  const dispatch = useDispatch();
+  const {
+    items: courses,
+    status,
+    error,
+  } = useSelector((state) => state.courses);
 
-  console.log("Courses", courses);
+  useEffect(() => {
+    if (status === "idle") {
+      dispatch(fetchCourses());
+    }
+  }, [status, dispatch]);
+
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
+
+  if (status === "failed") {
+    return <div>Error: {error}</div>;
+  }
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
@@ -25,21 +43,6 @@ const Courses = () => {
       course.instructor.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  useEffect(() => {
-    fetch("http://localhost:5000/courses")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        setCourses(data);
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation:", error);
-      });
-  }, []);
   return (
     <div className="mx-5 md:mx-32 mt-10 mb-44 flex flex-col justify-center items-center gap-4">
       <Searchbar searchQuery={searchQuery} handleSearch={handleSearch} />
