@@ -83,9 +83,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button className=" btn btn-outline   text-white border-[#F47D9E]  hover:border-white">
-          Student Dashboard
-        </button>
+        <Link to="/dashboard">
+          <button className=" btn btn-outline   text-white border-[#F47D9E]  hover:border-white">
+            Student Dashboard
+          </button>
+        </Link>
       </div>
     </div>
   );

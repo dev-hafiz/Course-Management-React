@@ -3,6 +3,8 @@ import Main from "../Layout/Main";
 import Home from "../pages/home/Home";
 import Courses from "../pages/courses/Courses";
 import CourseDetails from "../pages/course-details/CourseDetails";
+import Dashboard from "../Layout/Dashboard";
+import StudentDashboard from "../student-dashboard/StudentDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +26,18 @@ export const router = createBrowserRouter([
           fetch(
             `https://course-management-node-server.vercel.app/courses/${params.id}`
           ),
+      },
+    ],
+  },
+
+  // Dashboard Route
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "",
+        element: <StudentDashboard />,
       },
     ],
   },
