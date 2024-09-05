@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import SectionTab from "../../components/shared/SectionTab";
 import shape from "../../../src/assets/Line 48.png";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 const CourseDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   // Load  data from Redux state
   const enrolledCourses = useSelector((state) => state.enrolledCourses.items);
   const courses = useSelector((state) => state.courses.items);
@@ -26,6 +26,7 @@ const CourseDetails = () => {
     if (!courseExists) {
       dispatch(enrollCourse(course));
       toast.success(`${course.name} has been enrolled successfully!`);
+      navigate("/dashboard");
     } else {
       toast.error(`${course.name} is already enrolled.`);
     }
