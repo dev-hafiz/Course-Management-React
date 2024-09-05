@@ -44,7 +44,9 @@ const Dashboard = () => {
                   alt="Student Profile"
                 />
                 <div className="flex ml-3 flex-col">
-                  <h3 className="font-medium">Student Name</h3>
+                  <h3 className="font-medium text-gray-800 font-serif">
+                    Student Name
+                  </h3>
                 </div>
               </div>
 
