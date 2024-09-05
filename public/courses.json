@@ -12,6 +12,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "15 Sep 2024",
         "prerequisites": ["Basic IT knowledge"],
         "syllabus": [
             {
@@ -56,6 +58,8 @@
         "location": "Online",
         "rating" : 4,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "1 Oct 2024",
         "prerequisites": ["Basic IT knowledge"],
         "syllabus": [
             {
@@ -100,6 +104,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "30 Sep 2024",
         "prerequisites": ["Basic marketing knowledge"],
         "syllabus": [
             {
@@ -144,6 +150,8 @@
         "location": "Online",
         "rating" : 4,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "15 Nov 2024",
         "prerequisites": ["Basic understanding of JavaScript", "Familiarity with Express.js"],
         "syllabus": [
             {
@@ -188,6 +196,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "15 Oct 2024",
         "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
         "syllabus": [
             {
@@ -232,6 +242,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "1 Dec 2024",
         "prerequisites": ["Basic Python knowledge", "Understanding of statistics"],
         "syllabus": [
             {
@@ -276,6 +288,8 @@
         "location": "Online",
         "rating" : 4,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "30 Nov 2024",
         "prerequisites": ["None"],
         "syllabus": [
             {
@@ -320,6 +334,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "30 Oct 2024",
         "prerequisites": ["Basic knowledge of Python"],
         "syllabus": [
             {
@@ -364,6 +380,8 @@
         "location": "Online",
         "rating" : 5,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "20 Dec 2024",
         "prerequisites": ["Basic understanding of HTML, CSS, and JavaScript"],
         "syllabus": [
             {
@@ -408,6 +426,8 @@
         "location": "Online",
         "rating" : 4,
         "like" : 0,
+        "isComplete" : "false",
+        "dueDate": "17 Oct 2024",
         "prerequisites": ["None"],
         "syllabus": [
             {
