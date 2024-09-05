@@ -1,16 +1,45 @@
-import { useLoaderData } from "react-router-dom";
+import { useNavigation, useParams } from "react-router-dom";
 import SectionTab from "../../components/shared/SectionTab";
 import shape from "../../../src/assets/Line 48.png";
+import { useDispatch, useSelector } from "react-redux";
+import { enrollCourse } from "../../redux/slices/enrolledCoursesSlice ";
+import toast from "react-hot-toast";
 
 const CourseDetails = () => {
-  const course = useLoaderData();
+  const { id } = useParams();
+  const navigate = useNavigation();
+  const dispatch = useDispatch();
+
+  // Load  data from Redux state
+  const enrolledCourses = useSelector((state) => state.enrolledCourses.items);
+  const courses = useSelector((state) => state.courses.items);
+  const course = courses.find((course) => course._id == id);
+
+  if (!course) {
+    return <p>Course not found or still loading...</p>;
+  }
+
+  const handleEnroll = () => {
+    const courseExists = enrolledCourses.some(
+      (enrolledCourse) => enrolledCourse._id === course._id
+    );
+
+    if (!courseExists) {
+      dispatch(enrollCourse(course));
+      toast.success(`${course.name} has been enrolled successfully!`);
+      navigate("/dashboard");
+    } else {
+      toast.error(`${course.name} is already enrolled.`);
+    }
+  };
+
   return (
     <div>
       <SectionTab details="details" />
       <div className="px-0 md:px-32 mb-20">
-        <div className="mt-16 p-5 flex flex-col gap-4">
+        <div className="mt-16 p-5 flex flex-col gap-4 ">
           <h2 className="text-4xl font-serif font-medium">{course?.name}</h2>
-          <div>
+          <div className="flex justify-between items-center  w-3/5">
             <div className="flex items-center gap-3 ">
               <div className="w-[50px] h-[50px] rounded-full">
                 <img
@@ -28,6 +57,13 @@ const CourseDetails = () => {
                 </p>
               </div>
             </div>
+            <button
+              onClick={handleEnroll}
+              className="btn btn-primary mr-5 mt-2"
+            >
+              {" "}
+              Enroll Now
+            </button>
           </div>
         </div>
 

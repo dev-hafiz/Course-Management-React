@@ -155,7 +155,7 @@ const Courses = () => {
                       </div>
                     </div>
                     {/* Button  */}
-                    <Link to={`${course?._id}`}>
+                    <Link to={`/courses/${course._id}`}>
                       <Button children={"Details"} />
                     </Link>
                   </div>
