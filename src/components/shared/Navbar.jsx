@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../public/logo.png";
+
 const Navbar = () => {
   return (
     <div className="px-3 pt-4 md:px-28 mx-auto navbar bg-gradient-to-l from-[#1C1E53] to-[#151640] text-white">
@@ -36,7 +37,6 @@ const Navbar = () => {
                 <button>Home</button>
               </NavLink>
             </li>
-
             <li>
               <NavLink
                 to="/courses"
@@ -59,7 +59,7 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 ">
             <li>
               <NavLink
                 to="/"
@@ -70,7 +70,6 @@ const Navbar = () => {
                 <button>Home</button>
               </NavLink>
             </li>
-
             <li>
               <NavLink
                 to="/courses"
@@ -78,13 +77,13 @@ const Navbar = () => {
                   isActive ? "text-[#FD5386]" : "text-white"
                 }
               >
-                <button> All Courses</button>
+                <button>All Courses</button>
               </NavLink>
             </li>
           </ul>
         </div>
         <Link to="/dashboard">
-          <button className=" btn btn-outline   text-white border-[#F47D9E]  hover:border-white">
+          <button className="btn btn-outline text-white border-[#F47D9E] hover:border-white">
             Student Dashboard
           </button>
         </Link>

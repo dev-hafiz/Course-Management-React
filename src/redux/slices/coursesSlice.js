@@ -5,7 +5,10 @@ import axios from "axios";
 export const fetchCourses = createAsyncThunk(
   "courses/fetchCourses",
   async () => {
-    const response = await axios.get("/courses.json");
+    const response = await axios.get(
+      // "https://course-management-node-server.vercel.app/courses"
+      "/public/courses.json"
+    );
     return response.data;
   }
 );

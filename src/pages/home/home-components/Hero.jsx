@@ -44,8 +44,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 p-4 flex flex-col justify-end items-end">
-          <img src={heroImage} className="w-[700px] h-auto animate-bubble" />
+        <div className="col-span-12  md:col-span-6 p-4 flex flex-col justify-end items-end">
+          <img src={heroImage} className="w-[700px] h-auto animate-bubble " />
         </div>
       </div>
     </div>

@@ -11,8 +11,7 @@
         "schedule": "Fridays, 4:00 PM - 6:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 2,
         "dueDate": "15 Sep 2024",
         "prerequisites": ["Basic IT knowledge"],
         "syllabus": [
@@ -57,8 +56,7 @@
         "schedule": "Fridays, 2:00 PM - 4:00 PM",
         "location": "Online",
         "rating" : 4,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 5,
         "dueDate": "1 Oct 2024",
         "prerequisites": ["Basic IT knowledge"],
         "syllabus": [
@@ -103,8 +101,7 @@
         "schedule": "Wednesdays, 1:00 PM - 3:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 4,
         "dueDate": "30 Sep 2024",
         "prerequisites": ["Basic marketing knowledge"],
         "syllabus": [
@@ -149,8 +146,7 @@
         "schedule": "Mondays and Wednesdays, 5:00 PM - 7:00 PM",
         "location": "Online",
         "rating" : 4,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 1,
         "dueDate": "15 Nov 2024",
         "prerequisites": ["Basic understanding of JavaScript", "Familiarity with Express.js"],
         "syllabus": [
@@ -195,8 +191,7 @@
         "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 3,
         "dueDate": "15 Oct 2024",
         "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
         "syllabus": [
@@ -241,8 +236,7 @@
         "schedule": "Thursdays, 7:00 PM - 9:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 1,
         "dueDate": "1 Dec 2024",
         "prerequisites": ["Basic Python knowledge", "Understanding of statistics"],
         "syllabus": [
@@ -287,8 +281,7 @@
         "schedule": "Saturdays, 10:00 AM - 1:00 PM",
         "location": "Online",
         "rating" : 4,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 2,
         "dueDate": "30 Nov 2024",
         "prerequisites": ["None"],
         "syllabus": [
@@ -333,8 +326,7 @@
         "schedule": "Sundays, 3:00 PM - 5:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 4,
         "dueDate": "30 Oct 2024",
         "prerequisites": ["Basic knowledge of Python"],
         "syllabus": [
@@ -379,8 +371,7 @@
         "schedule": "Tuesdays and Thursdays, 6:00 PM - 9:00 PM",
         "location": "Online",
         "rating" : 5,
-        "like" : 0,
-        "isComplete" : "false",
+        "like" : 4,
         "dueDate": "20 Dec 2024",
         "prerequisites": ["Basic understanding of HTML, CSS, and JavaScript"],
         "syllabus": [
@@ -426,7 +417,6 @@
         "location": "Online",
         "rating" : 4,
         "like" : 0,
-        "isComplete" : "false",
         "dueDate": "17 Oct 2024",
         "prerequisites": ["None"],
         "syllabus": [
