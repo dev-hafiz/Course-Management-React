@@ -1,5 +1,5 @@
 # Course Management Web Application
-## Livesite [](https://course-management-react-frontend.vercel.app/)
+ [Livesite](https://course-management-react-frontend.vercel.app/)
 
 This project is a web application developed using React.js with Redux Toolkit for state management. It features a custom backend built with Node.js and Express.js, with MongoDB as the database. The application allows users to browse courses, view detailed information, and manage enrolled courses.
 
