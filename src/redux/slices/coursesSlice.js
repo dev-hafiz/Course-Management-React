@@ -7,7 +7,7 @@ export const fetchCourses = createAsyncThunk(
   async () => {
     const response = await axios.get(
       // "https://course-management-node-server.vercel.app/courses"
-      "/public/courses.json"
+      "/courses.json"
     );
     return response.data;
   }
