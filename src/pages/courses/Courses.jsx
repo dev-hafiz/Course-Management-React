@@ -35,11 +35,13 @@ const Courses = () => {
     setSearchQuery(event.target.value);
   };
 
-  const filteredCourses = courses?.filter(
-    (course) =>
-      course?.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      course?.instructor.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredCourses = Array.isArray(courses)
+    ? courses.filter(
+        (course) =>
+          course?.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          course?.instructor.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : [];
 
   return (
     <div>
