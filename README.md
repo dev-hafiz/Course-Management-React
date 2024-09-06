@@ -23,7 +23,8 @@ This project is a web application developed using React.js with Redux Toolkit fo
 
 ### Student Dashboard
 - **Enrolled Courses**: Displays a list of courses the student is enrolled in.
-- **Course Details**: Shows course name, instructor name, and thumbnail.
+- **Course Details**: Shows course name, instructor name, thumbnail, due date, and a progress bar.
+- **Mark as Completed**: Students can mark courses as completed.
 
 
 ### Advanced State Management
