@@ -1,4 +1,5 @@
 # Course Management Web Application
+## Livesite [](https://course-management-react-frontend.vercel.app/)
 
 This project is a web application developed using React.js with Redux Toolkit for state management. It features a custom backend built with Node.js and Express.js, with MongoDB as the database. The application allows users to browse courses, view detailed information, and manage enrolled courses.
 
@@ -68,7 +69,7 @@ npm run dev
 This will start the Vite development server, and you should see output indicating that the server is running.
 
 4. **Access the Application**
-Open your browser and go to http://localhost:5173. You should see the course management application running.
+Open your browser and go to https://course-management-react-frontend.vercel.app/ You should see the course management application running.
 
 
 
